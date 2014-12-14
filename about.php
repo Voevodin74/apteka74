@@ -33,3 +33,6 @@ $total = $massive['count(id)'];
 ?> 
 </div>
 </div>
+error_reporting(0);
+$over = 16; 
+if(empty($start)) { $start = 0; }
