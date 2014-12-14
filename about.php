@@ -26,3 +26,10 @@ $counting = $massive['count(id)'];
 }
 }
 else { echo 'Не работает <!— '.mysql_errno().": ". mysql_error() .' —>'; }
+$text_zaprosa = 'select count(id) from med';
+$zapros = mysql_query($text_zaprosa);
+$massive = mysql_fetch_array($zapros);
+$total = $massive['count(id)'];
+?> 
+</div>
+</div>
