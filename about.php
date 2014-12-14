@@ -36,3 +36,9 @@ $total = $massive['count(id)'];
 error_reporting(0);
 $over = 16; 
 if(empty($start)) { $start = 0; }
+$text_zaprosa = 'select * from `med` where med_cat=2 order by `id` DESC LIMIT '.$start.','.$over.'';
+$zapros = mysql_query($text_zaprosa);
+if(mysql_errno()==0)
+{
+while($massive = mysql_fetch_array($zapros))
+{
