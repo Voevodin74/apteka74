@@ -54,3 +54,24 @@ $zid = serialize( $myarray );
 $_SESSION['zid'] = $zid;
 ?> 
 
+ </div>
+          </div>
+                              
+                           <div class="column-2 right">
+                               <div class="column-2-inner left-inner padding-20">
+          
+<p><b>Оформление заказа:</b></p>
+
+<form action="kor_add2.php" method="POST">
+<p>Имя:</p>
+<p><input type="text" name="subject" size="20" maxlenght="20" /></p>
+<p>Телефон: (Формат ввода: 79525178522)</p>
+<p><input type="text" name="minitext" size="20" maxlenght="20" /></p>
+<p>
+<input type="submit" value="Отправить" class="button" /></p>
+</form>
+                     </div>
+                           </div>
+                        </div>
+                    </div>
+            			
