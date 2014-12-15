@@ -11,5 +11,17 @@ if(empty($start)) { $start = 0; }//Это условие нам необходи
 $text_zaprosa = "select * from korzina where korzina_session='".$ses_id."'";
 $zapros = mysql_query($text_zaprosa);
 if(mysql_errno()==0)
+        {
+
+                while($massive = mysql_fetch_array($zapros))
+                      {
+//поочередно заносим идентификаторы в массив
+$myarray[] = $massive['korzina_med_id'];                   
+$k = $massive['korzina_price'];      
+echo "
+<p>".htmlspecialchars($massive['korzina_name'])." ".htmlspecialchars($massive['korzina_price'])."  рублей  <a href=kor_del.php?do=approve&nomer=".htmlspecialchars($massive['korzina_id']).">[x]</a></p>  
+";
+
+ } 
 
 ?>
