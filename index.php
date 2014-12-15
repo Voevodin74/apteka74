@@ -86,7 +86,32 @@ $ses_id = session_id();
 				include("about.php");
 			}
 ?>
-место для футера
+               </div>
+                				<div id="footer" class="left full">
+                    <div id="footer-alpha" class="left column-1">
+                        <div class="left column-1-inner position-relative">
+                            <ul class="position-absolute bottom-0 no-margin no-padding">
+                                <li>© 2014</li>
+                                <li> Воеводин Андрей
+                            </li></ul>
+                        </div>
+                    </div>
+                    <div id="footer-beta" class="right column-1">
+                        <div class="left column-1-inner position-relative">
+                            <ul class="position-absolute bottom-0 no-margin no-padding">
+                                <li><a href="#top" class="top">Вверх</a></li>
+                                
+                                
+                                <li><a href="http://apteka-74.ru/dostavka/">Условия доставки</a></li>
+                                
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 <?
 $end_time = microtime(); 
 $end_array = explode(" ",$end_time); 
