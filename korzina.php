@@ -1,3 +1,11 @@
+<div id="grid-2" class="left full background-offset-single">
+                        <div id="grid-2-inner" class="left full">
+                           <div class="column-2 left">
+                               <div class="column-2-inner left-inner padding-20">
+           
+<p><b>Список Ваших покупок:</b></p>
+
+
 <?
 error_reporting(0);
 //больше 5 покупок пользователь не увидит
