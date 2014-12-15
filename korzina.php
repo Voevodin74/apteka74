@@ -24,4 +24,22 @@ echo "
 
  } 
 
+}
+
+$text_zaprosa2 = "select sum(korzina_price) as kprice from korzina where korzina_session='".$ses_id."'";
+$zapros2 = mysql_query($text_zaprosa2);
+if(mysql_errno()==0)
+        {
+
+                while($massive = mysql_fetch_array($zapros2))
+                      {
+echo "
+<p>ИТОГО: ".htmlspecialchars($massive['kprice'])." рублей</p>
+";
+
+ } 
+			
+}
+
+
 ?>
