@@ -23,6 +23,7 @@ echo "
 ";
 
  } 
+ 
 
 }
 
@@ -41,5 +42,7 @@ echo "
 			
 }
 
+$zid = serialize( $myarray );
+$_SESSION['zid'] = $zid;
+?> 
 
-?>
