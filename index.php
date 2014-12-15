@@ -76,7 +76,7 @@ $ses_id = session_id();
 
 <?
 	<!-- СРЕДНЯЯ ЯЧЕЙКА -->
-		<?php
+	<?php
 	if(!isset($n)) $n="about";
 
 		// Проверка переменной на специальные символы
@@ -85,8 +85,39 @@ $ses_id = session_id();
 			if($n=="about"){
 				include("about.php");
 			}
-?>
-               </div>
+                        // товары от боли
+			if($n=="about2"){
+				include("about2.php");
+			}
+                        // товары от кашля
+			if($n=="about3"){
+				include("about3.php");
+			}
+                        // товары от температуры
+			if($n=="about4"){
+				include("about4.php");
+			}
+                        // товары успокоительные
+			if($n=="about5"){
+				include("about5.php");
+			}
+			// корзина
+			if($n=="kor"){
+				include("korzina.php");
+			}
+			// контакты
+			if($n=="cont"){
+			include("contacts.html");
+			}
+			
+                        // дсотавка
+			if($n=="dost"){
+			include("dos.php");
+			}
+						
+			?>
+        
+                       </div>
                 				<div id="footer" class="left full">
                     <div id="footer-alpha" class="left column-1">
                         <div class="left column-1-inner position-relative">
